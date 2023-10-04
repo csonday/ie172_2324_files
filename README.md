@@ -1,3 +1,3 @@
-# ie1722324
+# Module 2a
 
-Please check the module materials to see the instructions
+For this module, only `dbconnect.py`` is added into this folder. Please refer to the instructions for `testdb.py`.
