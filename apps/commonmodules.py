@@ -27,7 +27,7 @@ navbar = dbc.Navbar(
             href="/home",
         ),
         dbc.NavLink("Home", href="/home", style=navlink_style),
-        dbc.NavLink("Movies", href="/movies", style=navlink_style),
+        dbc.NavLink("Movies", href="/movies/movies_home", style=navlink_style),
         dbc.NavLink("Genres", href="/genres", style=navlink_style),
     ],
     dark=True,

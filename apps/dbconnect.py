@@ -5,9 +5,9 @@ import psycopg2
 def getdblocation():
     db = psycopg2.connect(
         host="localhost",
-        database="172casedb_230",
+        database="ie172casedb_2223",
         user="postgres",
-        post=5432,
+        port=5432,
         password="password",
     )
 

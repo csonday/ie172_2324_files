@@ -12,6 +12,7 @@ from dash.exceptions import PreventUpdate
 from app import app
 from apps import commonmodules as cm
 from apps import home
+from apps.movies import movies_home, movies_profile
 
 CONTENT_STYLE = {
     "margin-top": "4em",
@@ -54,8 +55,11 @@ def displaypage (pathname):
                 # If we are at the homepage, let us output 'home'
                 returnlayout = home.layout
                 
-            elif pathname == '/movies':
-                returnlayout = 'moviepage'
+            elif pathname == '/movies/movies_home':
+                returnlayout = movies_home.layout
+                
+            elif pathname == '/movies/movies_profile':
+                returnlayout = movies_profile.layout
                 
             else:
                 returnlayout = 'error404'
