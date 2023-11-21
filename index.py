@@ -13,6 +13,7 @@ from app import app
 from apps import commonmodules as cm
 from apps import home, login, signup
 from apps.movies import movies_home, movies_profile
+from apps.po import po_home, po_profile
 
 CONTENT_STYLE = {
     "margin-top": "4em",
@@ -92,9 +93,14 @@ def displaypage (pathname, sessionlogout, userid):
 
                 elif pathname == '/movies':
                     returnlayout = movies_home.layout
-
                 elif pathname == '/movies/movies_profile':
                     returnlayout = movies_profile.layout
+                    
+            
+                elif pathname == '/po':
+                    returnlayout = po_home.layout
+                elif pathname == '/po/po_profile':
+                    returnlayout = po_profile.layout
 
                 else:
                     returnlayout = '404: request not found'
